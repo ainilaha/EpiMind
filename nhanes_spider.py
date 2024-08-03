@@ -14,7 +14,7 @@ class NhanesSpider(scrapy.Spider):
             text = element.xpath('text()').get()
             link = element.xpath('@href').get()
             yield {
-                'text': text,
+                'text': text.replace(' Doc', '').strip(),
                 'link': link
             }
         # Example: Extracting specific data
