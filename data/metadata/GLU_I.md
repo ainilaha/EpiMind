@@ -1,0 +1,354 @@
+### Table of Contents
+
+  * Component Description
+  * Eligible Sample
+  * Description of Laboratory Methodology
+  * Laboratory Method Files
+  * Laboratory Quality Assurance and Monitoring
+  * Data Processing and Editing
+  * Analytic Notes
+  * References
+  * Codebook
+    * SEQN - Respondent sequence number
+    * WTSAF2YR - Fasting Subsample 2 Year MEC Weight
+    * LBXGLU - Fasting Glucose (mg/dL)
+    * LBDGLUSI - Fasting Glucose (mmol/L)
+
+# National Health and Nutrition Examination Survey
+
+## 2015-2016 Data Documentation, Codebook, and Frequencies
+
+### Plasma Fasting Glucose (GLU_I)
+
+####  Data File: GLU_I.xpt
+
+##### First Published: June 2018
+
+##### Last Revised: August 2020
+
+##### Note: See Analytic Note describing the change in method in the 2015-2016
+survey cycle.
+
+## Component Description
+
+Diabetes is a leading cause of disease and death in the United States. More
+than 29 million Americans are living with diabetes, and 86 million are living
+with prediabetes, a serious health condition that increases a person's risk of
+type 2 diabetes and other chronic diseases. In 2014, nearly 9 percent of all
+deaths for persons over the age of 25 were among people with diabetes. The
+prevalence of diabetes and overweight (one of the major risk factors for
+diabetes) continue to increase. Substantial new efforts to prevent or control
+diabetes have begun, including the Diabetes Prevention Trial and the National
+Diabetes Education Program.  
+  
+There are several exclusion criteria, including hemophilia and chemotherapy
+safety exclusions, fasting less than nine hours and refusing phlebotomy.  
+
+## Eligible Sample
+
+Participants aged 12 years and older who were examined in the morning session
+were eligible.
+
+## Description of Laboratory Methodology
+
+**Glucose**
+
+In this enzymatic method glucose is converted to glucose-6-phosphate (G-6-P)
+by hexokinase in the presence of ATP, a phosphate donor. Glucose-6-phosphate
+dehydrogenase then converts the G-6-P to gluconate-6-P in the presence of
+NADP+. As the NADP+ is reduced to NADPH during this reaction, the resulting
+increase in absorbance at 340 nm (secondary wavelength = 700 nm) is measured.
+This is an endpoint reaction that is specific for glucose.
+
+Refer to the Laboratory Method Files section for a detailed description of the
+laboratory methods used.
+
+There were no changes to the lab site or lab method for this component in the
+NHANES 2015-2016 cycle. There were changes to the lab equipment. In 2015, the
+laboratory instrumentation changed from the Roche C501 to the Roche C311
+instrument.
+
+## Laboratory Method Files
+
+[Fasting Glucose Roche Cobas C311 2017 -
+Standard](https://wwwn.cdc.gov/nchs/data/nhanes/2015-2016/labmethods/GLU_I_MET_C311.pdf)
+(September 2019)
+
+[Fasting Glucose Roche/Hitachi Cobas C 501 Chemistry
+Analyzer](https://wwwn.cdc.gov/nchs/data/nhanes/2015-2016/labmethods/GLU_I_MET_C501.pdf)
+(September 2019)
+
+## Laboratory Quality Assurance and Monitoring
+
+Plasma samples are processed, stored, and shipped to the University of
+Missouri-Columbia, Columbia, MO for analysis.
+
+Detailed instructions on specimen collection and processing are discussed in
+the NHANES [Laboratory Procedures Manual
+(LPM)](https://wwwn.cdc.gov/nchs/data/nhanes/2015-2016/manuals/2016_mec_laboratory_procedures_manual.pdf).
+Vials are stored under appropriate frozen (-30°C) conditions until they are
+shipped to University of Missouri-Columbia for testing.
+
+The NHANES quality assurance and quality control (QA/QC) protocols meet the
+1988 Clinical Laboratory Improvement Act mandates. Detailed QA/QC instructions
+are discussed in the [NHANES
+LPM](https://wwwn.cdc.gov/nchs/data/nhanes/2015-2016/manuals/2016_mec_laboratory_procedures_manual.pdf).
+
+**Mobile Examination Centers (MECs)**
+
+Laboratory team performance is monitored using several techniques. NCHS and
+contract consultants use a structured competency assessment evaluation during
+visits to evaluate both the quality of the laboratory work and the quality
+control procedures. Each laboratory staff member is observed for equipment
+operation, specimen collection and preparation; testing procedures and
+constructive feedback are given to each staff member. Formal retraining
+sessions are conducted annually to ensure that required skill levels were
+maintained.
+
+**Analytical Laboratories**
+
+NHANES uses several methods to monitor the quality of the analyses performed
+by the contract laboratories. In the MEC, these methods include performing
+blind split samples collected on "dry run" sessions. In addition, contract
+laboratories randomly perform repeat testing on 2% of all specimens.
+
+NCHS developed and distributed a quality control protocol for all CDC and
+contract laboratories, which outlined the use of Westgard rules (Westgard et
+al, 1981) when running NHANES specimens. Progress reports containing any
+problems encountered during shipping or receipt of specimens, summary
+statistics for each control pool, QC graphs, instrument calibration, reagents,
+and any special considerations are submitted to NCHS quarterly. The reports
+are reviewed for trends or shifts in the data. The laboratories are required
+to explain any identified areas of concern.
+
+## Data Processing and Editing
+
+The data were reviewed. Incomplete data or improbable values were sent to the
+performing laboratory for confirmation.  
+  
+One variable was created in this data file. The variable was created using the
+following formulas:  
+  
+**LBXGLU and LBDGLUSI:**  
+The fasting glucose value in mg/dL (LBXGLU) was converted to mmol/L (LBDGLUSI)
+by multiplying by 0.05551 (rounded to 3 decimals).
+
+## Analytic Notes
+
+Refer to the [2015 - 2016 Laboratory Data
+Overview](https://wwwn.cdc.gov/nchs/nhanes/continuousnhanes/overviewlab.aspx?BeginYear=2015)
+for general information on NHANES laboratory data.
+
+**Subsample Weights  
+  
+**Glucose were measured in a fasting subsample of participants 12 years and
+older. Special sample weights are required to analyze these data properly.
+Specific sample weights for this subsample are included in this data file and
+should be used when analyzing these data.  
+  
+**Demographic and Other Related Variables**
+
+The analysis of NHANES laboratory data must be conducted using the appropriate
+survey design and demographic variables. The [NHANES 2015-2016 Demographics
+File](https://wwwn.cdc.gov/nchs/nhanes/search/datapage.aspx?Component=Demographics&CycleBeginYear=2015)
+contains demographic data, health indicators, and other related information
+collected during household interviews as well as the sample design variables.
+The recommended procedure for variance estimation requires use of stratum and
+PSU variables (SDMVSTRA and SDMVPSU, respectively) in the demographic data
+file.
+
+Starting in the 2015-2016 NHANES cycle, the variables PHAFSTHR (total length
+of "food fast", hours) and PHAFSTMN (Total length of "food fast", minutes)
+will not be reported in this file. PHAFSTHR and PHAFSTMN can be found in the
+[Fasting Questionnaire
+File](https://wwwn.cdc.gov/nchs/nhanes/2015-2016/fastqx_i.htm) (FASTQX_I). The
+fasting questionnaire data file also includes additional auxiliary information
+such as fasting status, and the time of venipuncture.
+
+This laboratory data file can be linked to the other NHANES data files using
+the unique survey participant identifier (i.e., SEQN).
+
+**Detection Limits**
+
+The detection limits were constant for all of the analytes in the data set.
+Two variables are provided for each of these analytes. The variable name
+ending "LC" (ex., LBDGLULC _)_ indicates whether the result was below the
+limit of detection: the value "0" means that the result was at or above the
+limit of detection, "1" indicates that the result was below the limit of
+detection.  For analytes with analytic results below the lower limit of
+detection (ex., LBDGLULC=1), an imputed fill value was placed in the analyte
+results field. This value is the lower limit of detection divided by the
+square root of 2 (LLOD/sqrt[2]). The other variable prefixed LBX (ex., LBXGLU
+_)_ provides the analytic result for that analyte.
+
+The lower limit of detection (LLOD, in mg/dL) for fasting glucose:
+
+**Variable Name** |   **SAS LABEL** |   **LLOD**  
+---|---|---  
+ LBXGLU |   Fasting glucose |   2.0  
+  
+** **
+
+**Impact of instrument change on plasma glucose results in 2015-2016**
+
+The Cobas C311 analyzer was used for most of 2015-2016 and the Cobas C501
+analyzer was used in 2013-2014. Randomly selected plasma samples (n=165) from
+NHANES 2015-2016 participants were measured using both instruments and the
+results were used to conduct the analysis. On average, glucose values measured
+from the Cobas C311 analyzer were 2% higher than values from the Cobas C501
+(p<.0001). Based on manufacturer information, the two analyzers have the same
+variation (Roche Diagnostics, 2009), and data from the bridging study
+indicated the correlation coefficient (r) between the measurements was 0.999.
+
+The 2% higher FPG values, measured from the new equipment (C311), results in a
+slight shift in the overall weighted distribution of FPG in the population.
+This shift has an impact on measures of diabetes that use specific FPG values
+as cut points. The impact is most notable for prediabetes which can be based
+on A1C values and an FPG between 100 and 125 mg/dL. Since the lower cut-point
+(100 mg/dL) is close to the median of the FPG distribution for non-pregnant
+adults (median= 99 mg/dL in 2013-2014), the 2% shift in FPG values results in
+a substantial proportion of adults between 100 and 125 mg/dL (see figure). For
+2015-2016, the weighted proportion of FPG values between 100-125 mg/dL in non-
+pregnant adults 18 years and older without diagnosed diabetes was 53.7% (SE,
+1.8) (C311). If these results were adjusted backward to account for changes in
+laboratory instrumentation, the proportion would be 41.5% (SE, 2.2) (C501).
+Comparatively, the proportion of FPG values greater than or equal to 126 mg/dL
+in non-pregnant adults 18 years and older without diagnosed diabetes was 5.5%
+(SE, 0.8) with the new equipment (C311) and would be 3.4% (SE, 0.4) if
+adjusted back to the 2013-2014 equipment (C501).
+
+FPG distribution among non-pregnant adults without diagnosed diabetes by lab
+instrument: 2015-2016
+
+![](data:image/png;base64,/9j/4AAQSkZJRgABAQEAkACQAAD/2wBDAAoHBwkHBgoJCAkLCwoMDxkQDw4ODx4WFxIZJCAmJSMgIyIoLTkwKCo2KyIjMkQyNjs9QEBAJjBGS0U+Sjk/QD3/2wBDAQsLCw8NDx0QEB09KSMpPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT3/wAARCAGRA+QDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD1+8u47GynupyRFBG0jkDJwBk8Vm2Xia2u7qCB7W+tWuP9S1zAUWQ4zgH1xz+FWPEMMlx4c1KKFGkke2kVEUZLEqcAVkN4fuv7KWW61G9vJoLZjBAyRoEkKEA/IoJIyQM0dx22Ooorzu60SS2sLaI6feysdOUWvlKxMV2eWZiPutnb8x44NOltZbnxDeiK3u31RLyHyrlQ3lRKEUvk9AMZyO+R1o62F0PQqqtqEPmTRxlpZYGVZI4xll3dM/hz9K4BtMvm066S2sdQjvGspUvpCrDz5S67Sp/jP3sEdAferkmgjT9Q1aPT9NmjMstm8ckUbbWQOu/5vbBJFNK/9eY7He0V5/Lp16bq5MVlejUD9r+03G1gksbK3lKrdG6pgDkYrY8MaVJpepuFgmihksLcuWzhpstuJz/FjGfwpLUT0OoooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAqGG1ht5ZpIo1R523yEfxHGMn8BU1FAHP2/iC5k1aNJIYRY3FzJawspPmB0BJLdsHa2Me1JqHiG5tNRnEcMLWVo8UdwST5hMhABXtgZGc1LH4caPUvtH2wm3jmkuIIDF/q5XBBJbPzD5mwMDr1pLrw293emWS9/czGJrqERf614yCpBz8oyBkc9Ka6DfUhm8QXdlrMlteJZmIwyzLHC5MsSIMhn7YbHYdeOaf4X1241qJ5LiS2+4rrHHDLGyg+u/GR7jjrUzaFdT6gs9zqReOEu0AWBVdCwI5bJDAAnAwO2c1Pp2mXFvdvdX94t1cGMRKyQ+UAgOeRk5Oe/H0pITNHev8AeH50b1/vD865PVfDujt4s0gNpdkROLhpQYV/eHCnJ45OSa1v+ES8P/8AQE07/wABk/woA1t6/wB4fnRvX+8PzrJ/4RLw/wD9ATTv/AZP8KP+ES8P/wDQE07/AMBk/wAKANbev94fnRvX+8PzrJ/4RLw//wBATTv/AAGT/Cj/AIRLw/8A9ATTv/AZP8KANbev94fnRvX+8PzrJ/4RLw//ANATTv8AwGT/AAo/4RLw/wD9ATTv/AZP8KANbev94fnRvX+8PzrJ/wCES8P/APQE07/wGT/Cj/hEvD//AEBNO/8AAZP8KANbev8AeH50b1/vD86yf+ES8P8A/QE07/wGT/Cj/hEvD/8A0BNO/wDAZP8ACgDW3r/eH50b1/vD86yf+ES8P/8AQE07/wABk/wo/wCES8P/APQE07/wGT/CgDW3r/eH50b1/vD86yf+ES8P/wDQE07/AMBk/wAKP+ES8P8A/QE0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RQAUUUUAFFYsHiIy6otu1rstZZ3t4Z/MyWkQEsCuOB8rYOTnHQUl94iNnqEkX2UvbQNGlxP5mCjSHC4XHzDkZ5GM96ANuisOXxFLaai0F9Y+TCUkkjdZg7kIMksgHyggccnt0qbSNbfUZ3gubX7NMIkuEUSbw0bZwc4GDwcj9aAIdU/5G3Qv9y5/9BWtysPVP+Rt0L/cuf8A0Fa3KACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigBksqQRPLK6pGgLMzHAAHc1jiW+13/AFO+x05v+WhGJp1/2ef3Y9zzzwBwaHxr2pGP/mH2Mvz91uZAOnoVUnn/AGlx2OdS7vIbG2ae5cJGvfqSewA6knsB1oArwaZpulWr7IIYogS8kknJJ7szHkk9yTVa6ubm8ELaTY2l1E6bxcXEm2PGcbRgFs9+mPenf2aNXaG61JJVQDK2TuDGDk4LgcMcY4OQD09a1QAoAAAA6AUAcxa6RrVteNPax6ZYBss8cM0kkcp68oVUKT/eHPsah0LxRFDFdR6hazWYju5leQkSIjGRjhiv3eowT17d666udttOe5tZLq0dY72K5uFVmGVkXzWyjjup/TqKl7ol/EjoVZXUMpDKRkEHIIpa5+3u7ySR7iwHMOI7vTJfvRkD/lm2QBkcjPDcdMk1uQzxXMe+GRZFBKkqc4IOCPwIqiiSiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAyfEH+osv8Ar+g/9DFa1ZPiD/UWX/X9B/6GK1qp/Ci38KCiiipICiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKxrX/AJHPU/8Arytv/Q5q2axrX/kc9T/68rb/ANDmoA2aKKKACiiigAooooA52Lw/dx6mrmeA2cFxLdW6bSH8xwRhu20bj056Ul54evLu9kLT262120Ml0oU7g8ZB+Q+hwOtdHRQBzlx4fvNQ1J5b2SzWIJJGJYYyJpEYEBX7YGc/UCrOiaPd2dy91qE0MkwgS2j8lSF8tCSCc/xHPPatqihaA9Tl59Kt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uh/8ec//AF93H/o1q0qzdD/485/+vu4/9GtUv4kS/iRpUUUVRQUUUUAFFFFABWLbH+yvEMtoeLbUMzweiyj/AFi/8CHz4HcOT1rarL12xmurWOeyA+3WkgmgycAkdVJ9GBIP1oAXVWj0+RNUFt5jx4imdSQyxE8tgfeCk7ueg3Y54OijrIiujBkYZVlOQR61Bp9/DqdjFd25JilGQGGCOxBHrmqejG4t5Luwug5WCTMErDAeNskKO2V5GB0AWgDVooooAKKKKACiiigAooooAyfEH+osv+v6D/0MVrVk+IP9RZf9f0H/AKGK1qp/Ci38KCiiipICiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKxrX/kc9T/AOvK2/8AQ5q2axrX/kc9T/68rb/0OagDZooooAKKKKACiiigDMh1+0m1Q2KrMG3NGsrJiOR15ZFPcjn8jSXXiC0tNRFnIJicqskqpmOItwoY9ie1ZUOk6gmqQxtbD7LaXk14k4kB83eGwgHUEF+SeOKbqGk6jd3lzGlriDUHt5XlMq/uPLILKRnknbxjI5proN9TYHiHTm1WfTknD3FvCZpQoyqAHBBPTPPSnaVq41ZGdLK8t4wAyvcRhQ4PcYJqpe6TNNrzXCQI9u9hJAwL7NzsynBxzyAeah8N6S1hcSPDpY0q28pY/s4kV97A/fypPbjJ5NJf1+ImTap/yNuhf7lz/wCgrW5XMXFnNbeNNIklv7i5WRbnbHKqBY+F6bVB9uSa6egAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigBksiwxPI2dqKWOPQVkeGYmms5NVmwZtSIn/3Y8fu1/BefqTS69/p8ltoyZxdktcEfwwLjd/30SF7H5iR92ruqXv8AZmmTXEcRldABHEv8TkhVXjoCSBnt1oApoItS8SNJ87Lpi7B02ea65PvuVCPbEnqK2Kr2MBt7VFZIllb55fKTapc8scc9TnvVigAooooAKKKKACiiigAooooAKzdD/wCPOf8A6+7j/wBGtWlWbof/AB5z/wDX3cf+jWqX8SJfxI0qKKKooKKKKACiiigAooooAxEH9i66VHy2GoEtk9I7gnnn/bzx7g+oFT61p81ybS6stv2y0lDJuOAynh1J9x/IVa1Kwj1PT5rWVmUSDh1+8jDlWHoQQCD6gVBo2oyX1vKlyqpd20hhnVemR0YexBB74zjJxQBbtLuG+tIrm1kEkEqhkcdGB71NWRa+Vo+pmxLP5d9LJPBkAKjYDNGDnJJO9x6AEdhWvQAUUUUAFFFFABRRRQBk+IP9RZf9f0H/AKGK1qyfEH+osv8Ar+g/9DFa1U/hRb+FBRRRUkBRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFY1r/yOep/9eVt/6HNWzWNa/wDI56n/ANeVt/6HNQBs0UUUAFFFFABRRRQAUUUUAFFFFAGHqn/I26F/uXP/AKCtblYeqf8AI26F/uXP/oK1uUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUVl6/fS2eniO0/wCP26YQW49GP8X0AyfwoAg0E/a7/VdRb7z3BtkB6qkXy4z6Ft7f8CNTeZcX+t4il2WNp98xuMyTf3TjsAenHJFP/wBG8N6AqjIhtYgoABJY+w6kk9h607RtNOm2TJK4kuJpGmnkAwGduv4AYH0FAGhRRRQAUUUUAFFFFABRRRQAUUUUAFZuh/8AHnP/ANfdx/6NatKs3Q/+POf/AK+7j/0a1S/iRL+JGlRRRVFBRRRQAUUUUAFFFFABWHrKNpl9FrkYJjiTyrtF6tETw3p8p5PtnmtymyRpLG0ciK6OCrKwyCD1BFAENxbxXkSMVjkZCJImYZCsOh4qDSNRfULU/aIxDdwtsnh/uN/gRgj2NVtNd9LvRpNwzPG4eSzlJz8gP+rOe6gjHXKjPY1JexXVvrFvfQeZLbsnkXEIbpzlXA6cEnPfGPSgDUopsciSxrJGyujAFWU5BHqDTqACiiigAooooAyfEH+osv8Ar+g/9DFa1ZPiD/UWX/X9B/6GK1qp/Ci38KCiiipICiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKxrX/AJHPU/8Arytv/Q5q2axrX/kc9T/68rb/ANDmoA2aKKKACiiigAooooAKKy4fEFrNqhsgky5dokmZR5cjqMsinOcjB6gDg0l14gtbPUfskiTHaUWSZVHlxF+EDHOefYHrQBq0VlDxJpx1a409Zi01tC00zBcogBAIJ9eelP0rW4NVZ0jingkRVkCTKAWRvuuME8HB9+OlAFXVP+Rt0L/cuf8A0Fa3Kw9U/wCRt0L/AHLn/wBBWtygAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACsSyX+1den1BubayLW1t6F/8Alq4+h+TPs4NWdbvpLa08izIN/c/u7dcZwTwXI7qoO4/THUio7qSLwz4ZY26FltYgkYbks3ABY9TknJPXqaAEuGi1XW0s9rNFp7JPKwb5TKQdiEY5I4ftg7DzWvVPTLM2doBIENxJ887oMb3PU1coAKKKKACiiigAooooAKKKKACiiigArN0P/jzn/wCvu4/9GtWlWbof/HnP/wBfdx/6NapfxIl/EjSoooqigooooAKKKKACiiigAooooAoavpzahaDyJBDdwnzLabGfLfGM/QgkEdwTS6XqK6nbSFozFNE5hniJzscdRnuPQ9xV6sXWozpk41uAYEK7btBwJIsjLH3QZI9sj0oAdpwXRZk0qWVfJYk2ZIIwuc+Xnp8ucKB/COnGTsVVvbG31OCNZgSqOssbKcFWHIINMsNRF40sMsZgu4T+9hY5IB6MD3U4OD7EdQRQBdooooAKKKKAMnxB/qLL/r+g/wDQxWtWT4g/1Fl/1/Qf+hitaqfwot/CgoooqSAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACsa1/5HPU/+vK2/9DmrZrGtf+Rz1P8A68rb/wBDmoA2aKKKACiiigAooooA5eHR9QTVIkaBPslpdzXkcwkGZS4bCY6ggucnpxTb/R9Ru7y4jW3RbfUHt5ZZDKMwGMglcfxZ24BFdVRQgMLUtGnv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FItM05YVuRD/AKPCwOxEXAycDhRx9elTabYjT7QQ+a8rszSSSP1Z2JLHHYZJ4HAqPTtP8h3u7jc97OPnZiD5a9RGuOMD26nmr9ABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAVm6H/x5z/8AX3cf+jWrSrN0P/jzn/6+7j/0a1S/iRL+JGlRRRVFBRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABUF5ZwX9q9vcoHifqPT0IPYj1qeigDGhv5dJkS01VneMnbDe7TtYdhIRwrdBk4DZGOcgPvNMl+0i/wBJmWG4cr5qH/VTrkfe46gZwRg9AeK05Yo54nimRZI3BVkcZDA9QR3FY7WF5ozGTSiZ7Tq1lIfuj/pke3+6ePTFAEer6ja3hht4ZQZ7fUIBLEQQyfvBgkHsex71v1zGqXVjq66fPGMXdrfQB42+WWAs4yrDtnH0OMjPBrRj1O7tLsQ6tBFHHK+2G5iYlCSeFYHlT0APQn04Bp/Cin8KNaiiipJCiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKxrX/kc9T/AOvK2/8AQ5q2axrX/kc9T/68rb/0OagDZooooAKKKKACiiigAooooAKKKKAMPVP+Rt0L/cuf/QVrcrD1T/kbdC/3Ln/0Fa3KACiiigAooooAKKKKACiiigAooooAKKKKACiiigAoopCcDJ6UALVHUdVi08xx+XLPcy/6uCFcu3v7DpkngVWm1ea7me20aJZ5EbbJcSZEMX0OPnYf3QexyRxmCw8mJrxNPuk1DVsDzp5ugPYMVGAADnYMZ/HNADn8zS4zqV9E13qMxWJI4RkR7jxGpPQZxljjPU4AAFzS7SdIUuNSET6gwO91UfIMkhAcZwM/zp+naaLASO881xcTYMksrZJx2A6KuScAdM1doAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigArN0P/jzn/6+7j/0a1aVZuh/8ec//X3cf+jWqX8SJfxI0qKKKooKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigDn/ABXp0V1HZSgvBci8hVZ4iA6guPXIPbggjgVK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iigAooooAKKKKACiiigAooooAKKKKACub8SpK9wqW97di8kj22lrbOUw+eZHI6qOM7uPxNdJWXf+G9K1O8F3eWiyXAQJ5gdlO0HIHBHGaAMF728j1IXRupmlGprZGAOfLMewE/J0znnPWpfDt3cnUNPL3U041CykuZlkcsqOGXBUdFHzEYHFb66Np66iL8Wsf2oLtEnfHT8/frS2WkWOnTzTWdskUk5zIy9+c/hz6U0/6/r7wLtFFFIAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiuZ8TaldWusafawXV7BDNFK7/AGO1E7kqUxwVbA+Y9vSqF5rMttqdpa3fiG5sYHszMJJreJJJH34wQycYHbAoWoWO1orkLDVtT1QW1kl75W8TTG+EKh5IUcKjKpG0Fsg5xjHQc1reHdQN7HdR/wBqW+pCGTasseA4BGcOAAAfp1FAGzRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQBTl05JdXtr8uweCKSIIOhDlST/AOO0n9mp/bX9peY2/wCz+Rs7Y3bs/WrtFAGdqek/b5Ybi3uZLS8gyI50APB6qVPBBwOPUCk0nRzpslzPNdS3d1dMGllcBQcDAAUcAAVpUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFA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)
+
+Vertical lines represent lower FPG thresholds for prediabetes (green, 100
+mg/dL) and diabetes (purple, 126 mg/dL).
+
+** **
+
+**Glucose regression equations to compare 2015-16 and 2013-14 data:**
+
+A method validation (bridging) study was performed to compare results from an
+instrument change in 2015-2016 cycle with earlier data. Regression analyses
+were performed using Analyse-it, v4.30.4. Given that the data showed
+proportional differences in variability, a weighted Deming regression was
+chosen to adjust the plasma glucose results (mg/dL). The forward and backward
+equations are below:
+
+Forward:   **Y** _(C311)_ **= 1.023** (95%CI: 1.014 - 1.032) *** X** _(C501)_
+**\- 0.5108** (95%CI: -1.441 - 0.4197)
+
+Backward:**Y** _(C501)_ **= 0.9776**(95%CI: 0.9692 - 0.9860) *** X** _(C311)_
+**\+ 0.4994** (95%CI: -0.4064 - 1.405)
+
+These regression equations are provided for researchers and should be used
+according to the analytic aims and interests.  The backwards equation can be
+used to ensure comparability between the 2015-2016 cycle and previous years
+that were measured using the Cobas C501 machine values (pre-2015).  The
+forward equation may be used if the interest is ensuring comparability with
+data collected using the Cobas C311 machine (2015 and later) when comparing or
+combining the 2015-2016 values with other years of data.  Either equation
+could be used for analyses that compare 2015-2016 results to earlier years,
+examine trends of plasma glucose data across 2015-2016 and 2007-2014 cycles,
+or combine 2015-2016 data with these previous cycles, depending on the
+research interest. The user will need to carefully consider the information
+presented in this analytic note when determining how to analyze FPG data from
+2015-16 to examine measures of diabetes. For analysis involving 2015-2016 data
+and data collected prior to 2007-2008 cycle, please refer to the documentation
+accompanying the 2007-2008
+([GLU_E](https://wwwn.cdc.gov/Nchs/Nhanes/2007-2008/GLU_E.htm)) and 2005-2006
+([GLU_D](https://wwwn.cdc.gov/Nchs/Nhanes/2005-2006/GLU_D.htm)) fasting
+glucose data for additional adjustments.
+
+As mentioned above, most of the 2015-2016 samples were measured using the
+Cobas C311. Results in this 2015-2016 dataset from specimens analyzed using
+the Cobas C501 were adjusted using the above forward regression equation.
+
+Please refer to the NHANES [Analytic
+Guidelines](https://wwwn.cdc.gov/nchs/nhanes/analyticguidelines.aspx) and the
+on-line NHANES [Tutorial](https://www.cdc.gov/nchs/tutorials/) for further
+details on the use of sample weights and other analytic issues.
+
+## References
+
+  * Roche Diagnostics Technical Publications Department (December 2009).  Cobas C 501 Analyzer and Cobas C 311 Analyzer Within Run Imprecision Guidelines, Volume 6.    
+<https://www.rochediagnostics.fr/Htdocs/media/pdf/actualites/2g_Specif_Repeta_c501.pdf>
+
+  * Westgard J.O., Barry P.L., Hunt M.R., Groth T. A multi-rule Shewhart chart for quality control in clinical chemistry. Clin Chem (1981) 27:493-501.  
+
+## Codebook and Frequencies
+
+### SEQN - Respondent sequence number
+
+Variable Name:
+
+    SEQN
+SAS Label:
+
+    Respondent sequence number
+English Text:
+
+    Respondent sequence number
+Target:
+
+     Both males and females 12 YEARS - 150 YEARS
+
+### WTSAF2YR - Fasting Subsample 2 Year MEC Weight
+
+Variable Name:
+
+    WTSAF2YR
+SAS Label:
+
+    Fasting Subsample 2 Year MEC Weight
+English Text:
+
+    Fasting Subsample 2 Year MEC Weight
+Target:
+
+     Both males and females 12 YEARS - 150 YEARS
+Code or Value | Value Description | Count | Cumulative | Skip to Item  
+---|---|---|---|---  
+13612.331812 to 521632.18583 | Range of Values | 2743 | 2743 |   
+0 | No Lab Result | 448 | 3191 |   
+. | Missing | 0 | 3191 |   
+  
+### LBXGLU - Fasting Glucose (mg/dL)
+
+Variable Name:
+
+    LBXGLU
+SAS Label:
+
+    Fasting Glucose (mg/dL)
+English Text:
+
+    Fasting Glucose (mg/dL)
+Target:
+
+     Both males and females 12 YEARS - 150 YEARS
+Code or Value | Value Description | Count | Cumulative | Skip to Item  
+---|---|---|---|---  
+21 to 479 | Range of Values | 2972 | 2972 |   
+. | Missing | 219 | 3191 |   
+  
+### LBDGLUSI - Fasting Glucose (mmol/L)
+
+Variable Name:
+
+    LBDGLUSI
+SAS Label:
+
+    Fasting Glucose (mmol/L)
+English Text:
+
+    Fasting Glucose (mmol/L)
+Target:
+
+     Both males and females 12 YEARS - 150 YEARS
+Code or Value | Value Description | Count | Cumulative | Skip to Item  
+---|---|---|---|---  
+1.17 to 26.6 | Range of Values | 2972 | 2972 |   
+. | Missing | 219 | 3191 | 
+
