@@ -1,3 +1,6 @@
 html2text
 scrapy
-spacy
+openai
+llama-index
+# spacy
+# scispacy

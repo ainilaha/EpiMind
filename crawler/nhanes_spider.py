@@ -1,7 +1,7 @@
 import scrapy
 
 # Run the spider with the following command:
-# scrapy runspider nhanes_spider.py -o data/nhanes_data.json
+# scrapy runspider nhanes_spider.py -o ../data/nhanes_data.json
 class NhanesSpider(scrapy.Spider):
     name = "nhanes"
     start_urls = [
