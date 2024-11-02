@@ -44,6 +44,15 @@ RUN echo "listen_addresses = '*'" >> /var/lib/postgresql/data/postgresql.conf
 RUN echo "host    all             all             0.0.0.0/0               md5" >> /var/lib/postgresql/data/pg_hba.conf
 ENV PGDATA=/var/lib/postgresql/data
 
+#------------------------------------------------------------------------------
+# Initialize PostgreSQL and create a database
+#------------------------------------------------------------------------------
+USER postgres
+RUN /usr/lib/postgresql/17/bin/initdb -D /var/lib/postgresql/data
+RUN /usr/lib/postgresql/17/bin/pg_ctl -D /var/lib/postgresql/data -l logfile start && \
+    psql -U postgres -c "CREATE DATABASE epimind_db;" && \
+    /usr/lib/postgresql/17/bin/pg_ctl -D /var/lib/postgresql/data stop
+
 
 #------------------------------------------------------------------------------
 # Install Annnaconda
