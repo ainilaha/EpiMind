@@ -8,11 +8,11 @@ jobs:
             - name: Checkout code
               uses: actions/checkout@v4
             - name: build image
-              run: docker buildx build --platform linux/amd64 -t epimind:latest -t epimind:v0.0.1 .
+              run: docker buildx build --platform linux/amd64 -t ainilaha/epimind:latest -t ainilaha/epimind:v0.0.1 .
             - name: push image to docker hub
               run: |
                   docker login -u ${{ secrets.DOCKER_HUB_USER }} -p ${{ secrets.DOCKER_HUB_TOKEN }}
-                  docker push ${{ secrets.DOCKER_HUB_USER }}/epimind:latest
+                  docker push ainilaha/epimind:latest
 
 
             # - name: Set up Docker Buildx
