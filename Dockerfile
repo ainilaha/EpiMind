@@ -54,7 +54,7 @@ ENV CONDA_DIR=/opt/conda
 #     /bin/bash /tmp/miniconda.sh -b -p $CONDA_DIR && \
 #     rm /tmp/miniconda.sh
 RUN set -x && \
-    wget https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-Linux-aarch64.sh -O /tmp/miniforge.sh && \
+    wget https://github.com/conda-forge/miniforge/releases/download/24.7.1-2/Mambaforge-24.7.1-2-Linux-x86_64.sh -O /tmp/miniforge.sh && \
     /bin/bash /tmp/miniforge.sh -b -p $CONDA_DIR && \
     rm /tmp/miniforge.sh
 
