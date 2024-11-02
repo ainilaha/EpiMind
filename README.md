@@ -13,3 +13,18 @@
    - Improve search and generation(KNN,ANN,PCA, LDA etc)
    - knowledge graph for epidemiology
    - Agentic-flow model for epidemiology
+
+```
+docker \
+    run \
+        --name epimind \
+        -d \
+        -v <YOUR LOCAL DATA PATH>:/var/lib/postgresql/data \
+        -v <YOUR LOCAL CODE PATH>:/root/ \
+        -p 5432:5432 \
+        -p 8888:8888 \
+        -e POSTGRES_PASSWORD=password \
+        pgvector/pgvector:0.8.0-pg17
+```
+
+Try to access: http://localhost:8888
