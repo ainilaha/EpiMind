@@ -59,7 +59,7 @@ ENV PGDATA=/var/lib/postgresql/data
 #------------------------------------------------------------------------------
 ENV CONDA_DIR=/opt/conda
 RUN set -x && \
-    wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-aarch64.sh -O /tmp/miniconda.sh && \
+    wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -O /tmp/miniconda.sh && \
     /bin/bash /tmp/miniconda.sh -b -p $CONDA_DIR && \
     rm /tmp/miniconda.sh
 # RUN set -x && \
