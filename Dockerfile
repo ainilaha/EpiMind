@@ -58,14 +58,14 @@ ENV PGDATA=/var/lib/postgresql/data
 # Install Annnaconda
 #------------------------------------------------------------------------------
 ENV CONDA_DIR=/opt/conda
-# RUN set -x && \
-#     wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-aarch64.sh -O /tmp/miniconda.sh && \
-#     /bin/bash /tmp/miniconda.sh -b -p $CONDA_DIR && \
-#     rm /tmp/miniconda.sh
 RUN set -x && \
-    wget https://github.com/conda-forge/miniforge/releases/download/24.7.1-2/Mambaforge-24.7.1-2-Linux-x86_64.sh -O /tmp/miniforge.sh && \
-    /bin/bash /tmp/miniforge.sh -b -p $CONDA_DIR && \
-    rm /tmp/miniforge.sh
+    wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-aarch64.sh -O /tmp/miniconda.sh && \
+    /bin/bash /tmp/miniconda.sh -b -p $CONDA_DIR && \
+    rm /tmp/miniconda.sh
+# RUN set -x && \
+#     wget https://github.com/conda-forge/miniforge/releases/download/24.7.1-2/Mambaforge-24.7.1-2-Linux-x86_64.sh -O /tmp/miniforge.sh && \
+#     /bin/bash /tmp/miniforge.sh -b -p $CONDA_DIR && \
+#     rm /tmp/miniforge.sh
 
 
 ENV PATH=$CONDA_DIR/bin:$PATH
