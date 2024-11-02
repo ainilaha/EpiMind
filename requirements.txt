@@ -2,5 +2,6 @@ html2text
 scrapy
 openai
 llama-index
-# spacy
-# scispacy
+pgvector
+psycopg
+sentence-transformers
