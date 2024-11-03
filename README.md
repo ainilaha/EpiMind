@@ -25,7 +25,7 @@ docker \
         -p 5432:5432 \
         -p 8888:8888 \
         -e POSTGRES_PASSWORD=password \
-        ainilaha/epimind:v0.0.1
+        ainilaha/epimind:v0.0.2
 ```
 
 Try to access: http://localhost:8888
