@@ -19,7 +19,6 @@ docker \
     run \
         --name epimind \
         -d \
-        -v <YOUR LOCAL DATA PATH>:/var/lib/postgresql/data \
         -v <YOUR LOCAL CODE PATH>:/root/ \
         -p 5432:5432 \
         -p 8888:8888 \
