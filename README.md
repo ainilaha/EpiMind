@@ -14,6 +14,8 @@
    - knowledge graph for epidemiology
    - Agentic-flow model for epidemiology
 
+### Setup the Docker
+
 ```
 docker \
     run \
