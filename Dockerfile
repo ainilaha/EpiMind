@@ -36,7 +36,7 @@ RUN sed -i "s/^.*X11Forwarding.*$/X11Forwarding yes/" /etc/ssh/sshd_config \
 
 
 #------------------------------------------------------------------------------
-# Initialize PostgreSQL and create a cluster
+# Initialize PostgreSQL database
 #------------------------------------------------------------------------------
 USER postgres
 RUN pg_createcluster 17 main --start && \
@@ -47,10 +47,11 @@ RUN pg_createcluster 17 main --start && \
 USER root
 RUN sed -i "s/local   all             postgres                                peer/local   all             postgres                                md5/" /etc/postgresql/17/main/pg_hba.conf
 
+# Ensure PostgreSQL listens on all interfaces
+RUN sed -i "s/#listen_addresses = 'localhost'/listen_addresses = '*'/" /etc/postgresql/17/main/postgresql.conf
 
-
-# Set the entry point
-# CMD ["sh", "-c", "service ssh start && pg_ctlcluster 17 main start && tail -f /dev/null"]
+# Allow all IP addresses to connect to PostgreSQL (this affects both all and replication)
+RUN sed -i "s/127.0.0.1\/32/0.0.0.0\/0/" /etc/postgresql/17/main/pg_hba.conf
 
 
 #------------------------------------------------------------------------------
