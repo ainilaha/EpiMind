@@ -1,0 +1,12 @@
+.npm
+.cache
+.local
+.vscode
+.idea
+.ipynb_checkpoints
+.ipython
+.jupyter
+*.pyc
+.DS_Store
+pgvector/.DS_Store
+.DS_Store

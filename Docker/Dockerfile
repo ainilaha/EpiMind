@@ -77,7 +77,7 @@ RUN /opt/conda/bin/conda install -y \
             /opt/conda/bin/conda clean -ya
 
 # install packages
-COPY requirements.txt /home/jupyter/requirements.txt
+COPY ../requirements.txt /home/jupyter/requirements.txt
 RUN pip install -r /home/jupyter/requirements.txt
 
 

@@ -29,5 +29,5 @@ def read_file_sections(file_path):
     return sections
 
 # read files from data folder and get the sections
-sections = read_file_sections('data/metadata/AA_H.md')
+sections = read_file_sections('../data/metadata/AA_H.md')
 

@@ -1,0 +1,5 @@
+openai
+llama-index
+pgvector
+psycopg
+sentence-transformers
