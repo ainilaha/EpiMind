@@ -86,7 +86,11 @@ RUN pip install -r /home/jupyter/requirements.txt
 
 # Expose ports
 EXPOSE 8888 5432 22
-CMD ["sh", "-c", "service ssh start && service postgresql start && jupyter lab --ip=0.0.0.0 --no-browser --allow-root --NotebookApp.token=''"]
+
+CMD ["sh", "-c", "service ssh start && \
+    service postgresql start && \
+    cd /root && \
+    jupyter lab --ip=0.0.0.0 --no-browser --allow-root --NotebookApp.token=''"]
 
 
 
