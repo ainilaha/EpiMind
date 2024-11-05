@@ -6,7 +6,7 @@
 1. Retrive data from the CDC website
    - convert html doc to markdown doc (Done)
    - extract the data from the markdown doc
-   - store the data in a vector database [pgvector](https://github.com/pgvector/pgvector) of ([Postgresql](https://www.postgresql.org/)  to perform vector searches in LlamaIndex
+   - store the data in a vector database [pgvector](https://github.com/pgvector/pgvector) of [Postgresql](https://www.postgresql.org/)  to perform vector searches in LlamaIndex
 2. RAG model
    - RAG model for epidemiology
    - Named Entity Recognition(NER) for epidemiology
