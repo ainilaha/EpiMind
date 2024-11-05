@@ -30,8 +30,6 @@ docker \
 
 Try to access: http://localhost:8888
 
-And then you should able to find the jupyter notebooks `/root/`
-
 You can interact with docker container with:
 
 `docker exec -it epimind /bin/bash`
