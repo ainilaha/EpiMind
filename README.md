@@ -4,9 +4,9 @@
 ### Large Language Model(LLM) for Epidemiology with RAG (Retrieval-Augmented Generation)
 
 1. Retrive data from the CDC website
-   - covernt html doc to markdown doc (Done)
+   - convert html doc to markdown doc (Done)
    - extract the data from the markdown doc
-   - store the data in a vector database ([Postgresql](https://www.postgresql.org/) and [pgvector](https://github.com/pgvector/pgvector) to perform vector searches in LlamaIndex)
+   - store the data in a vector database [pgvector](https://github.com/pgvector/pgvector) of ([Postgresql](https://www.postgresql.org/)  to perform vector searches in LlamaIndex
 2. RAG model
    - RAG model for epidemiology
    - Named Entity Recognition(NER) for epidemiology
@@ -14,7 +14,15 @@
    - knowledge graph for epidemiology
    - Agentic-flow model for epidemiology
 
-### Setup the Docker
+### Meeting Agenda
+   - Help RG to setup the environment
+   - Save data into local or container during develop stage
+   - How to split (chunk) the text? split based on title would always work (eg too long or too short)
+   - Embedding models for the text
+
+
+
+### Setup the Environment
 
 ```
 docker \
